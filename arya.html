@@ -1,0 +1,258 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>The Gift Company</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            header {
+                background: linear-gradient(135deg, #ffcccb, #ff6f61);
+                padding: 40px;
+                text-align: center;
+                color: #fff;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                position: relative;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 3em;
+                animation: slideInFromLeft 1s ease-in-out;
+            }
+
+            header p {
+                font-size: 1.2em;
+                margin-top: 10px;
+                animation: slideInFromRight 1s ease-in-out;
+            }
+
+            @keyframes slideInFromLeft {
+                from {
+                    transform: translateX(-100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes slideInFromRight {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+
+            nav {
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                margin: 0 15px;
+            }
+
+            nav a {
+                color: #ff6f61;
+                text-decoration: none;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 15px 0;
+                display: block;
+                transition: color 0.3s, border-bottom 0.3s;
+            }
+
+            nav a:hover {
+                color: #ff3b2f;
+                border-bottom: 2px solid #ff3b2f;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                animation: fadeIn 1s ease-in-out;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            section {
+                background-color: #fff;
+                padding: 30px;
+                margin-bottom: 40px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                max-width: 800px;
+                width: 100%;
+                text-align: center;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            section:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            section h2 {
+                margin-top: 0;
+                color: #ff6f61;
+                font-size: 2em;
+            }
+
+            section p {
+                font-size: 1.1em;
+                color: #666;
+                line-height: 1.6;
+            }
+
+            .about-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            footer {
+                background: linear-gradient(135deg, #ff6f61, #ffcccb);
+                padding: 20px;
+                text-align: center;
+                color: #fff;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 1em;
+            }
+
+            @media (max-width: 768px) {
+                nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                nav li {
+                    margin: 10px 0;
+                }
+
+                main {
+                    padding: 20px;
+                }
+
+                section {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>The Gift Company</h1>
+            <p>Making the world a happier place, one gift at a time.</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gifts">Gifts</a></li>
+                <li><a href="#flowers">Flowers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Two partners, Harry and Stephanie, decided to open a dream company for sending flowers and gifts. Harry is a flower farmer, ensuring the best flowers are used for the perfect occasions. Stephanie, on the other hand, is an expert in choosing the perfect gift for different occasions. Both are business-minded with the goal of making the world a happier place to be. The business started 2 months ago, but it seems the local neighborhood finds it difficult to transact with us as we operate from a small shop on the outskirts of town, close to the flower farm.</p>
+                </div>
+            </section>
+            <section id="gifts">
+                <h2>Gifts for Every Occasion</h2>
+                <p>From birthdays to anniversaries, we've got the perfect gift for you. Browse our selection of unique and thoughtful presents.</p>
+            </section>
+            <section id="flowers">
+                <h2>Fresh Flowers for Every Occasion</h2>
+                <p>Our flowers are grown with love and care, ensuring the freshest and most beautiful blooms for your special occasion.</p>
+            </section>
+            <section id="contact">
+                <h2>Get in Touch</h2>
+                <p>Visit us at our shop, or contact us online to place an order or ask a question.</p>
+                <p>Address: 123 Flower Farm Road, Outskirts of Town</p>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: <a href="mailto:info@thegiftcompany.com">info@thegiftcompany.com</a></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 The Gift Company</p>
+        </footer>
+
+        <script>
+            // Adding 3D animation to the header text
+            const header = document.querySelector('header h1');
+            header.addEventListener('mouseenter', () => {
+                header.style.transition = 'transform 0.5s';
+                header.style.transform = 'rotateY(360deg)';
+            });
+            header.addEventListener('mouseleave', () => {
+                header.style.transition = 'transform 0.5s';
+                header.style.transform = 'rotateY(0deg)';
+            });
+
+            // Adding fade-in effect for sections
+            const sections = document.querySelectorAll('section');
+            const options = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(section);
+            });
+        </script>
+    </body>
+
+    </html>
